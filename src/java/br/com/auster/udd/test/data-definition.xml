@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<udd:document name="SIRS"	xmlns:udd="http://www.auster.com.br/udd/SimpleFlatFileReader/"
+	encoding-from="ISO-8859-1" 
+  max-record-size="16384" 
+  buffer-size="262144" 
+	separator-char="\n">
+  <udd:element name="company" separator=";">
+    <udd:attribute name="name" index="1"/>
+    <udd:attribute name="cnpj" index="2"/>
+    <udd:attribute name="address" index="3"/>
+  </udd:element>
+</udd:document>

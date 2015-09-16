@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<configuration>
+   <log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+        <appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+            <param name="Threshold" value="DEBUG"/>
+            <layout class="org.apache.log4j.PatternLayout">
+                <param name="ConversionPattern" value="%d{ABSOLUTE} %-5p [(%c{1}) %t] %m%n"/>
+            </layout>
+        </appender>
+        <root>
+            <priority value="info"/>
+            <appender-ref ref="CONSOLE"/>
+        </root>
+  </log4j:configuration>
+  <xml-reader class-name="br.com.auster.udd.reader.SimpleFlatFileReader"
+					    udd-path="data-definition.xml"
+              encrypted="false"/>
+</configuration>
